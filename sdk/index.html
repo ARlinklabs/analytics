@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Analytics SDK</title>
+    
+    <!-- Canonical URL for accurate tracking -->
+   
+    
+    <!-- Basic styles -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Website</h1>
+        <p>This page demonstrates the implementation of the analytics SDK</p>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Analytics SDK Integration Guide</h2>
+            <p>Follow these steps to integrate our analytics SDK into your web application.</p>
+            
+            <h3>Quick Start</h3>
+            <p>Add the following script tag to your HTML file, just before the closing <code>&lt;/body&gt;</code> tag:</p>
+            <pre><code>&lt;script type="module" src="https://analytics_arlink.ar.io/browser.js" 
+        data-process-id="YOUR_PROCESS_ID" 
+        data-track-url-hashes="true" 
+        data-debug="true"&gt;&lt;/script&gt;</code></pre>
+
+            <h3>Configuration Options</h3>
+            <p>The SDK supports the following configuration attributes:</p>
+            <ul>
+                <li><strong>data-process-id:</strong> Your unique process ID (required)</li>
+                <li><strong>data-track-url-hashes:</strong> Set to "true" to track URL hash changes (optional)</li>
+                <li><strong>data-debug:</strong> Set to "true" to enable debug logging in console (optional)</li>
+            </ul>
+
+            <h3>Best Practices</h3>
+            <ol>
+                <li>Always place the script tag just before the closing <code>&lt;/body&gt;</code> tag for optimal page loading</li>
+                <li>Replace <code>YOUR_PROCESS_ID</code> with your actual process ID spawned in Arlink</li>
+                <li>Enable debug mode during development and disable it in production</li>
+            </ol>
+
+            <h3>Complete Example</h3>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Your Website&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Your website content here --&gt;
+
+    &lt;!-- Analytics SDK Implementation --&gt;
+    &lt;script type="module" src="https://analytics_arlink.ar.io/browser.js" 
+            data-process-id="YOUR_PROCESS_ID" 
+            data-track-url-hashes="true" 
+            data-debug="true"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+        
+        <section>
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+            
+            <button id="signup-button" class="cta-button">Sign Up Now</button>
+        </section>
+        
+        <section>
+            <h2>Our Features</h2>
+            <ul>
+                <li>Feature 1: Amazing functionality</li>
+                <li>Feature 2: Incredible performance</li>
+                <li>Feature 3: Outstanding design</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Example Company. All rights reserved.</p>
+    </footer>
+    
+    <!-- Analytics SDK Implementation -->
+    <script type="module" src="https://analytics_arlink.ar.io/browser.js" 
+            data-process-id="KwN-pImOjCjuZQ0exwcPBw9DyjR1H7HrEpn2IZOTPD4" 
+            data-track-url-hashes="true" 
+            data-debug="true"></script>
+</body>
+</html>
