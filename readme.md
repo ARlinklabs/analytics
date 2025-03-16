@@ -50,3 +50,6 @@ Here's a complete example of how to implement the SDK in your HTML:
 2. Replace `YOUR_PROCESS_ID` with your actual process ID spawned in Arlink
 3. Enable debug mode during development and disable it in production
 
+## Acknowledgments
+
+This SDK is derived from junction [kay-is/junction](https://github.com/kay-is/junction) by [Kay](https://github.com/kay-is/). We thank the original authors for their contributions.
